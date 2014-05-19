@@ -15,6 +15,8 @@
 #import "UMSocialScreenShoter.h"
 
 #import "RTRunTime.h"
+
+#import "SHObject.h"
 #define kTagShareEdit 101
 #define kTagSharePost 102
 

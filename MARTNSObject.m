@@ -116,6 +116,7 @@
 
 + (void)rt_addMethod: (RTMethod *)method
 {
+    //TOO class_addMethod([self class], @selector(resolveThisMethodDynamically), (IMP) myMethodIMP, "v@:");
     class_addMethod(self, [method selector], [method implementation], [[method signature] UTF8String]);
 }
 

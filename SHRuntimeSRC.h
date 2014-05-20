@@ -32,19 +32,19 @@
  * @APPLE_LICENSE_HEADER_END@
  */
 
-#ifndef _OBJC_RUNTIME_H
-#define _OBJC_RUNTIME_H
+#ifndef _OBJC_RUNTIME_H1
+#define _OBJC_RUNTIME_H1
 
-//#include <objc/objc.h>
-//#include <stdarg.h>
-//#include <stdint.h>
-//#include <stddef.h>
-//#include <Availability.h>
-//#include <TargetConditionals.h>
-//
-//#if TARGET_OS_MAC
-//#include <sys/types.h>
-//#endif
+#include <objc/objc.h>
+#include <stdarg.h>
+#include <stdint.h>
+#include <stddef.h>
+#include <Availability.h>
+#include <TargetConditionals.h>
+
+#if TARGET_OS_MAC
+#include <sys/types.h>
+#endif
 
 
 /* Types */

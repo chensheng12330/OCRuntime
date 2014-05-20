@@ -18,6 +18,29 @@
 #import <objc/message.h>
 #import <objc/objc.h>
 
+/****
+ struct objc_method {
+ SEL method_name;
+ char *method_types;
+ IMP method_imp;
+ }
+ 
+ @encode()
+ 
+ Object   = @
+ Selector = :
+ void     = v
+ class object= #
+ integer  = i
+ boolean  = b
+ char     = c
+ 
+ 例: 
+ method_types= "v@:"  -> v -> 返回值为void, @=>实体对象, : =>方法选择器
+ void deallocImplementation(id self, SEL _cmd){}
+ class_addMethod(Class, @selector(dealloc), (IMP) deallocImplementation, "v@:");
+ OC中的每个类或实体方法，转化成C函数后，必包括 (id self, SEL _cmd)两个参数
+ */
 //*TOO
 /*
  将方法名与方法所对应标示符绑定，注册到类的方法列表中

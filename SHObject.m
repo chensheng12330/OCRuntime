@@ -8,6 +8,12 @@
 
 #import "SHObject.h"
 
+//C   API TESTING
+void CAPI_getMethodInfo(id self, SEL _cmd)
+{
+    return ;
+}
+
 @interface SHObject ()
 {
     int m_cate_int2;
